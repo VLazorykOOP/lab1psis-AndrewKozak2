@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #fdfaf6;
+  color: #4a4a4a;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #6b4f4b;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #bf927b;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #bf927b;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #a67b68;
+}
+
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #6b4f4b;
+}
+
+.page-title {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.page-title h2 {
+  font-size: 36px;
+  color: #6b4f4b;
+}
+
+.menu-section {
+  padding-bottom: 60px;
+}
+.menu-section h3 {
+  font-size: 28px;
+  color: #6b4f4b;
+  border-bottom: 2px solid #bf927b;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-section .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-info,
+.map-placeholder {
+  flex: 1;
+}
+
+.map-placeholder {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #6b4f4b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
