@@ -100,6 +100,7 @@ nav ul li a.active {
 .about {
   padding: 60px 0;
   text-align: center;
+  background-color: #fff; /* Додаємо фон, щоб візуально відділити секцію */
 }
 
 .about h2 {
@@ -108,6 +109,16 @@ nav ul li a.active {
   color: #6b4f4b;
 }
 
+/* Новий стиль для параграфа "Про нас" */
+.about p {
+  font-size: 18px; /* Робимо текст трохи більшим */
+  color: #555; /* Робимо текст трохи темнішим */
+  line-height: 1.7; /* Збільшуємо міжрядковий інтервал */
+
+  /* Найголовніше: обмежуємо ширину і центруємо */
+  max-width: 750px;
+  margin: 0 auto; /* Це центрує блок параграфа */
+}
 .page-title {
   text-align: center;
   padding: 40px 0;
@@ -116,23 +127,6 @@ nav ul li a.active {
 .page-title h2 {
   font-size: 36px;
   color: #6b4f4b;
-}
-
-.menu-section {
-  padding-bottom: 60px;
-}
-.menu-section h3 {
-  font-size: 28px;
-  color: #6b4f4b;
-  border-bottom: 2px solid #bf927b;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-}
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  font-size: 18px;
 }
 
 .contact-section .container {
@@ -161,4 +155,303 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
+}
+.gallery-section {
+  padding-bottom: 60px;
+}
+
+.gallery-grid {
+  display: grid;
+  /* Створює 3 колонки однакової ширини */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px; /* Фіксована висота для охайності */
+  object-fit: cover; /* Зберігає пропорції, обрізаючи зайве */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Ефект легкого збільшення */
+}
+
+/* --- Нові стилі для Контактної форми --- */
+.contact-form {
+  flex: 1; /* Займає вільне місце поруч з .contact-info */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #6b4f4b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Важливо для правильної ширини */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Змінюємо кнопку "btn", щоб вона виглядала як кнопка форми */
+.contact-form .btn {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.contact-form .btn:hover {
+  background-color: #a67b68;
+}
+
+/* --- Нові стилі для Карти --- */
+.map-section {
+  /* Карта буде в секції після .contact-section, */
+  /* тому вона вже буде на повну ширину */
+  margin-top: 40px;
+}
+
+.map-section iframe {
+  display: block; /* Прибирає можливий відступ знизу */
+  width: 100%;
+}
+
+.menu-item {
+  display: none;
+}
+
+/* Сітка для карток меню */
+.menu-grid {
+  display: grid;
+  /* Створює 3 колонки на великих екранах */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Відстань між картками */
+  margin-bottom: 40px; /* Відстань між категоріями */
+}
+
+/* Стиль самої картки */
+.menu-item-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Обрізає фото, яке виходить за межі */
+  display: flex;
+  flex-direction: column; /* Розташовує елементи (фото, текст, ціна) в стовпчик */
+  transition: box-shadow 0.3s ease;
+}
+
+.menu-item-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Зображення в картці */
+.menu-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Масштабує фото, щоб заповнити блок */
+}
+
+/* Блок з текстом під фото */
+.menu-item-text {
+  padding: 15px;
+  flex-grow: 1; /* Змушує цей блок рости, щоб ціна завжди була внизу */
+}
+
+.menu-item-text h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+.menu-item-details {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Ціна */
+.menu-item-price {
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6b4f4b;
+  text-align: right;
+}
+
+/* --- Адаптивність для меню --- */
+/* Коли екран менший (наприклад, планшет) */
+@media (max-width: 992px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  }
+}
+
+/* Коли екран зовсім малий (мобільний) */
+@media (max-width: 576px) {
+  .menu-grid {
+    grid-template-columns: 1fr; /* 1 колонка */
+  }
+}
+.special-offer {
+  padding: 40px 0;
+  background-color: #fff; /* Білий фон, щоб виділити */
+  margin-bottom: 40px; /* Відступ до меню */
+}
+
+.special-offer-content {
+  display: flex;
+  align-items: center; /* Вирівнюємо фото і текст по центру */
+  gap: 40px;
+}
+
+.special-offer-image {
+  width: 40%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.special-offer-text {
+  flex: 1; /* Текст займає весь вільний простір */
+}
+
+.special-offer-text h3 {
+  font-size: 16px;
+  color: #bf927b; /* Колір акценту */
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.special-offer-text h2 {
+  font-size: 36px;
+  color: #6b4f4b; /* Темний колір */
+  margin: 10px 0;
+}
+
+.special-offer-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.special-offer-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* --- Адаптивність для блоку пропозиції --- */
+@media (max-width: 768px) {
+  .special-offer-content {
+    flex-direction: column; /* На мобільних - один під одним */
+    text-align: center;
+  }
+
+  .special-offer-image {
+    width: 100%; /* Фото на всю ширину */
+    max-width: none;
+    height: 250px;
+  }
+}
+.bestsellers {
+  padding: 60px 0;
+}
+.bestsellers h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #6b4f4b;
+  text-align: center;
+}
+.bestsellers p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #777;
+}
+.text-center-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Блок Переваг "Чому ми?" */
+.features {
+  padding: 60px 0;
+  background-color: #fff; /* Трохи виділимо фон */
+}
+.features h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #6b4f4b;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.feature-item {
+  text-align: center;
+  padding: 20px;
+}
+.feature-item h3 {
+  font-size: 22px;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+.feature-item p {
+  line-height: 1.6;
+}
+
+/* Блок Заклику до дії (CTA) */
+.cta-visit {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/hero-background.jpg") no-repeat center center/cover;
+  background-attachment: fixed; /* Ефект паралаксу */
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+.cta-visit h2 {
+  font-size: 36px;
+  margin: 0 0 15px 0;
+}
+.cta-visit p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+/* Ми перевикористовуємо .btn, але можемо змінити колір, якщо хочемо */
+.cta-visit .btn {
+  background-color: #fff;
+  color: #6b4f4b;
+  font-weight: bold;
+}
+.cta-visit .btn:hover {
+  background-color: #f4f4f4;
+}
+
+/* --- Адаптивність для нових блоків --- */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* 1 колонка на мобільних */
+    gap: 10px;
+  }
+
+  .bestsellers .menu-grid {
+    grid-template-columns: 1fr; /* 1 колонка на мобільних */
+  }
 }

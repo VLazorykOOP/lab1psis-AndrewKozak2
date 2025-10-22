@@ -1,72 +1,267 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Наше меню - Гірське Еспресо</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">Гірське Еспресо</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="menu.html" class="active">Наше меню</a></li>
-                    <li><a href="contact.html">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo">Гірське Еспресо</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="menu.html" class="active">Наше меню</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="container page-title">
-             <h2>Наше Меню</h2>
-        </div>
-       
-        <section class="menu-section">
-            <div class="container">
-                <h3>Класична кава</h3>
-                <div class="menu-item">
-                    <p><strong>Еспресо</strong></p>
-                    <p>45 грн</p>
-                </div>
-                <div class="menu-item">
-                    <p><strong>Американо</strong></p>
-                    <p>50 грн</p>
-                </div>
-                 <div class="menu-item">
-                    <p><strong>Капучино</strong></p>
-                    <p>65 грн</p>
-                </div>
-                <div class="menu-item">
-                    <p><strong>Лате</strong></p>
-                    <p>70 грн</p>
-                </div>
+      <div class="container page-title">
+        <h2>Наше Меню</h2>
+        <p>Найкращі зерна 100% Арабіки та свіжі десерти щодня</p>
+      </div>
 
-                <h3>Десерти</h3>
-                 <div class="menu-item">
-                    <p><strong>Чізкейк "Альпійський"</strong></p>
-                    <p>110 грн</p>
-                </div>
-                 <div class="menu-item">
-                    <p><strong>Тірамісу</strong></p>
-                    <p>100 грн</p>
-                </div>
-                 <div class="menu-item">
-                    <p><strong>Брауні з горіхами</strong></p>
-                    <p>90 грн</p>
-                </div>
+      <section class="special-offer">
+        <div class="container">
+          <div class="special-offer-content">
+            <img
+              src="css/images/menu/capuchinoCroissant.jpg"
+              alt="Спеціальна пропозиція"
+              class="special-offer-image"
+            />
+            <div class="special-offer-text">
+              <h3>Пропозиція тижня</h3>
+              <h2>Капучино + Круасан</h2>
+              <p>
+                Отримайте класичний круасан з мигдалем лише за півціни при
+                купівлі великого капучино. <br />Найкращий початок вашого ранку!
+              </p>
+              <p class="special-offer-price">Всього: 125 грн</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="menu-section">
+        <div class="container">
+          <h3>Кавова класика</h3>
+          <div class="menu-grid">
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/espresso.jpg"
+                alt="Еспресо"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Еспресо</h4>
+                <p class="menu-item-details">Класичний міцний шот. 30 мл</p>
+              </div>
+              <p class="menu-item-price">45 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/americano.jpg"
+                alt="Американо"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Американо</h4>
+                <p class="menu-item-details">
+                  Еспресо, розбавлений водою. 150 мл
+                </p>
+              </div>
+              <p class="menu-item-price">50 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/capuchino.jpg"
+                alt="Капучино"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Капучино</h4>
+                <p class="menu-item-details">
+                  Ідеальний баланс еспресо та молока. 250 мл
+                </p>
+              </div>
+              <p class="menu-item-price">65 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/latte.jpg"
+                alt="Лате"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Лате</h4>
+                <p class="menu-item-details">Ніжний молочний напій. 300 мл</p>
+              </div>
+              <p class="menu-item-price">70 грн</p>
+            </div>
+          </div>
+
+          <h3>Авторські та холодні напої</h3>
+          <div class="menu-grid">
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/lavandRaf.jpg"
+                alt="Лавандовий раф"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Лавандовий раф</h4>
+                <p class="menu-item-details">
+                  Вершкова кава з нотками лаванди. 300 мл
+                </p>
+              </div>
+              <p class="menu-item-price">90 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/bamblCoffe.jpg"
+                alt="Бамбл кава"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Бамбл кава</h4>
+                <p class="menu-item-details">
+                  Еспресо з апельсиновим соком. 350 мл
+                </p>
+              </div>
+              <p class="menu-item-price">85 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/iceLatte.jpg"
+                alt="Айс Лате"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Айс Лате</h4>
+                <p class="menu-item-details">
+                  Освіжаючий холодний лате з льодом. 400 мл
+                </p>
+              </div>
+              <p class="menu-item-price">75 грн</p>
+            </div>
+          </div>
+
+          <h3>Чай та інші напої</h3>
+          <div class="menu-grid">
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/matchaLatte.jpg"
+                alt="Матча лате"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Матча лате</h4>
+                <p class="menu-item-details">
+                  Зелений чай матча на молоці. 300 мл
+                </p>
+              </div>
+              <p class="menu-item-price">85 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/alpTravi.jpg"
+                alt="Трав'яний чай"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Чай "Альпійські трави"</h4>
+                <p class="menu-item-details">Чайник. 500 мл</p>
+              </div>
+              <p class="menu-item-price">60 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/hotChocolate.jpg"
+                alt="Какао"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Гарячий шоколад</h4>
+                <p class="menu-item-details">
+                  Густий бельгійський шоколад. 200 мл
+                </p>
+              </div>
+              <p class="menu-item-price">70 грн</p>
+            </div>
+          </div>
+
+          <h3>Десерти та випічка</h3>
+          <div class="menu-grid">
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/cakeNewYork.jpg"
+                alt="Чізкейк"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Чізкейк "Нью-Йорк"</h4>
+                <p class="menu-item-details">Ніжний вершковий смак. 180 г</p>
+              </div>
+              <p class="menu-item-price">110 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/taramisu.jpg"
+                alt="Тірамісу"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Тірамісу</h4>
+                <p class="menu-item-details">Італійська класика. 150 г</p>
+              </div>
+              <p class="menu-item-price">100 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/croisantMig.jpg"
+                alt="Круасан"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Мигдалевий круасан</h4>
+                <p class="menu-item-details">
+                  Свіжоспечений, з франжипаном. 110 г
+                </p>
+              </div>
+              <p class="menu-item-price">80 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/macaroon.jpg"
+                alt="Макарон"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Макарон (асорті)</h4>
+                <p class="menu-item-details">
+                  Смаки: фісташка, малина, шоколад. 1 шт / 30 г
+                </p>
+              </div>
+              <p class="menu-item-price">45 грн</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Гірське Еспресо. Створено з любов'ю.</p>
-        </div>
+      <div class="container">
+        <p>© 2025 Гірське Еспресо. Створено з любов'ю.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

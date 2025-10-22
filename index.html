@@ -1,11 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demonstration of the website in a container (docker)</title>
-</head>
-<body>
-    <h1> Run site !</h1>
-</body>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гірське Еспресо - Головна</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">Гірське Еспресо</a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Головна</a></li>
+            <li><a href="menu.html">Наше меню</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Кава, що надихає на вершини</h1>
+          <p>
+            Завітайте до нас, щоб відчути справжній смак гір у кожній чашці.
+          </p>
+          <a href="menu.html" class="btn">Переглянути меню</a>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2>Про нас</h2>
+          <p>
+            "Гірське Еспресо" — це не просто кав'ярня. Це місце, де аромат
+            свіжозвареної кави поєднується із затишком гірського шале. Ми
+            використовуємо тільки найкращі зерна та створюємо атмосферу, в якій
+            хочеться мріяти.
+          </p>
+        </div>
+      </section>
+
+      <section class="bestsellers">
+        <div class="container">
+          <h2>Наші Хіти</h2>
+          <p>Те, за чим повертаються наші гості</p>
+
+          <div class="menu-grid">
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/capuchino.jpg"
+                alt="Капучино"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Капучино</h4>
+                <p class="menu-item-details">
+                  Ідеальний баланс еспресо та молока. 250 мл
+                </p>
+              </div>
+              <p class="menu-item-price">65 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/cakeNewYork.jpg"
+                alt="Чізкейк"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Чізкейк "Нью-Йорк"</h4>
+                <p class="menu-item-details">Ніжний вершковий смак. 180 г</p>
+              </div>
+              <p class="menu-item-price">110 грн</p>
+            </div>
+            <div class="menu-item-card">
+              <img
+                src="css/images/menu/lavandRaf.jpg"
+                alt="Лавандовий раф"
+                class="menu-item-image"
+              />
+              <div class="menu-item-text">
+                <h4>Лавандовий раф</h4>
+                <p class="menu-item-details">
+                  Вершкова кава з нотками лаванди. 300 мл
+                </p>
+              </div>
+              <p class="menu-item-price">90 грн</p>
+            </div>
+          </div>
+
+          <div class="text-center-btn">
+            <a href="menu.html" class="btn">Переглянути все меню</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2>Чому обирають нас?</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <h3>Найкращі Зерна</h3>
+              <p>
+                Ми ретельно відбираємо зерна 100% Арабіки з найкращих плантацій
+                світу та обсмажуємо їх самі.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>Свіжа Випічка</h3>
+              <p>
+                Наші десерти та круасани випікаються щоранку, щоб гарантувати
+                вам найсвіжіший смак.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>Затишна Атмосфера</h3>
+              <p>
+                Наш інтер'єр у стилі гірського шале — ідеальне місце для роботи,
+                зустрічей з друзями або відпочинку.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-visit">
+        <div class="container">
+          <h2>Чекаємо на Вас</h2>
+          <p>
+            м. Чернівці, вул. Університетська, 28 <br />
+            Пн - Нд, з 8:00 до 21:00
+          </p>
+          <a href="contact.html" class="btn">Знайти на карті</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Гірське Еспресо. Створено з любов'ю.</p>
+      </div>
+    </footer>
+  </body>
 </html>

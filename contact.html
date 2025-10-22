@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакти - Гірське Еспресо</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">Гірське Еспресо</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="menu.html">Наше меню</a></li>
-                    <li><a href="contact.html" class="active">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo">Гірське Еспресо</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="menu.html">Наше меню</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html" class="active">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="container page-title">
-             <h2>Наші Контакти</h2>
-        </div>
+      <div class="container page-title">
+        <h2>Наші Контакти</h2>
+      </div>
 
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-info">
-                    <h3>Завітайте до нас</h3>
-                    <p><strong>Адреса:</strong> м. Чернівці, вул. Університетська, 28</p>
-                    <p><strong>Години роботи:</strong> Пн - Нд, з 8:00 до 21:00</p>
-                    <p><strong>Телефон:</strong> +38 (099) 123-45-67</p>
-                </div>
-                <div class="map-placeholder">
-                    <p>Карта</p>
-                </div>
-            </div>
-        </section>
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-info">
+            <h3>Завітайте до нас</h3>
+            <p>
+              <strong>Адреса:</strong> м. Чернівці, вул. Університетська, 28
+            </p>
+            <p><strong>Години роботи:</strong> Пн - Нд, з 8:00 до 21:00</p>
+            <p><strong>Телефон:</strong> +38 (099) 123-45-67</p>
+          </div>
+
+          <div class="contact-form">
+            <h3>Напишіть нам</h3>
+            <form action="#">
+              <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Ваш Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn">Відправити</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.754848777169!2d25.93282131580173!3d48.29364997923617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473408990b503e91%3A0x23a073f1a0279860!2z0LLRg9C70LjRhtGPINCi0L3QtdGCLCAyOCwg0KfQtdGA0L3RltCy0YbRliwg0KfQtdGA0L3RltCy0LDRjyDQvtCx0LvQsNGB0YLRjCwgNTgwMDA!5e0!3m2!1suk!2sua!4v1666456345632!5m2!1suk!2sua"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Гірське Еспресо. Створено з любов'ю.</p>
-        </div>
+      <div class="container">
+        <p>© 2025 Гірське Еспресо. Створено з любов'ю.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
